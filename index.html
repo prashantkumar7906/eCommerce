@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Deliver_it</h1>
+        <input type="text" name="search" placeholder="Enter the name of the product ...." id="search">
+    </header>
+
+    <hr>
+
+    <aside>
+        <h2>Filters</h2>
+        <ul>
+            <li>Relevance</li>
+            <div class="dropdown">
+                <button class="dropbtn">Relevance</button>
+                <div class="dropdown-content">
+                    <a href="#">Low - to - Medium</a>
+                    <a href="#">Medium - to - High</a>
+                    <a href="#">None</a>
+                </div>
+            </div>
+            <li>Category</li>
+            <div class="dropdown">
+                <button class="dropbtn">Category</button>
+                <div class="dropdown-content">
+                    <a href="#">Electronics</a>
+                    <a href="#">Fashion</a>
+                    <a href="#">Home Appliances</a>
+                    <a href="#">Books</a>
+                    <a href="#">Toys</a>
+                </div>
+            </div>
+            <li>Price Range</li>
+            <input type="range" name="price" id="price-range" min="10" max="10000">
+            <span id="price-display">$10 - $10000</span>
+            <li>Brand</li>
+            <div class="dropdown">
+                <button class="dropbtn">Brand</button>
+                <div class="dropdown-content">
+                    <a href="#">Brand A</a>
+                    <a href="#">Brand B</a>
+                    <a href="#">Brand C</a>
+                </div>
+            </div>
+            <li>Rating</li>
+            <div class="dropdown">
+                <button class="dropbtn">Rating</button>
+                <div class="dropdown-content">
+                    <a href="#">1 Star & Up</a>
+                    <a href="#">2 Stars & Up</a>
+                    <a href="#">3 Stars & Up</a>
+                    <a href="#">4 Stars & Up</a>
+                    <a href="#">5 Stars</a>
+                </div>
+            </div>
+        </ul>
+    </aside>
+
+    <main>
+        <div class="slideshow">
+            <div class="mySlide fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="laptop.jpg" alt="Laptop" style="width:100%">
+                <div class="text">Get yourself a demon slaying laptop</div>
+            </div>
+            <div class="mySlide fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="headphones.jpg" alt="Headphones" style="width:100%">
+                <div class="text">Realistic sounding headphones</div>
+            </div>
+            <div class="mySlide fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="sofa.jpg" alt="Sofa" style="width:100%">
+                <div class="text">Get relaxing sofas for a steal deal</div>
+            </div>
+            <div class="mySlide fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="vacuum.jpg" alt="Vacuum" style="width:100%">
+                <div class="text">For all the clean people</div>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+        </div>
+
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="laptop.jpg" alt="Laptop">
+                <h3>Laptop</h3>
+                <p>$1200</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="headphones.jpg" alt="Headphones">
+                <h3>Headphones</h3>
+                <p>$200</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="sofa.jpg" alt="Sofa">
+                <h3>Sofa</h3>
+                <p>$800</p>
+                <button>Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="vacuum.jpg" alt="Vacuum">
+                <h3>Vacuum</h3>
+                <p>$150</p>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Deliver_it. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
